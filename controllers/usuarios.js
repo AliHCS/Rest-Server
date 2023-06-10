@@ -22,6 +22,7 @@ const usuariosGet = async(req = request, res = response) => {
         total,
         usuarios
     });
+    console.log('Commit desde otra cuenta');
 }
 
 const usuariosPost = async(req, res = response) => {
