@@ -31,7 +31,7 @@ const UsuarioSchema = Schema({
     default: false,
   },
 });
-
+//funcion para no mandar la contraseña 
 UsuarioSchema.methods.toJSON = function () {
   const { __v, password, ...usuario } = this.toObject();
   return usuario;
